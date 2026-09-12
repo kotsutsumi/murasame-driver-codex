@@ -395,7 +395,7 @@ export class InternalCodexRun implements CodexRunHandle {
   }
 
   private tryFinalize(): void {
-    if (!this.#processExitKnown || !this.#stdoutEnded) return;
+    if (!this.#processExitKnown || !this.#stdoutEnded || !this.#stderrEnded) return;
     this.finalize();
   }
 

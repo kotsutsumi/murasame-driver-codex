@@ -63,6 +63,8 @@ event sequence.
 - A zero-exit process that produced no semantic stdout events is reported as
   `EMPTY_SUCCESSFUL_RUN` and returned as a failed run. This catches silent
   headless executions while preserving the raw stderr for diagnosis.
+- The final result waits for stdout and stderr to drain before adapter
+  finalization, so late diagnostic bytes are retained.
 - Timeout and signal escalation timers are execution controls, not a UI
   scheduler.
 

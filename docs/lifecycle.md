@@ -13,7 +13,7 @@ running ── cancel/timeout ──▶ cancelling
 
 The semantic close order is always:
 
-1. drain stdout;
+1. drain stdout and stderr;
 2. call `adapter.flush()`;
 3. call `adapter.finish()` exactly once;
 4. ingest both event batches into the runtime;

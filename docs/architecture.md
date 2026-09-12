@@ -21,7 +21,7 @@ codex exec --json
      │              Runtime.ingestMany()
      └─ stderr ──▶ bounded diagnostic tail
 
-stdout EOF + process exit
+stdout/stderr EOF + process exit
      │
      ├─ adapter.flush()  ──▶ runtime
      └─ adapter.finish() ──▶ runtime
@@ -37,6 +37,6 @@ thread ID. Semantic mapping remains in `@murasame/adapter-codex`.
 Each `run()` creates one adapter and one MURASAME agent/task identity. All runs
 created by a driver use the runtime's session-scoped sequence provider.
 
-The process finalization barrier waits for process exit and stdout EOF before
+The process finalization barrier waits for process exit and stdout/stderr EOF before
 calling `flush()` and `finish()`. This prevents an exit event from racing the
 last JSONL bytes.
