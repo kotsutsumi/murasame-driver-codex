@@ -5,9 +5,9 @@
     "": {
       "name": "@murasame/driver-codex",
       "dependencies": {
-        "@murasame/adapter-codex": "git+ssh://git@github.com/kotsutsumi/murasame-adapter-codex.git#v0.1.0-rc.1",
-        "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.1",
-        "@murasame/runtime": "git+ssh://git@github.com/kotsutsumi/murasame-runtime.git#v0.1.0-rc.1",
+        "@murasame/adapter-codex": "git+ssh://git@github.com/kotsutsumi/murasame-adapter-codex.git#v0.1.0-rc.2",
+        "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.2",
+        "@murasame/runtime": "git+ssh://git@github.com/kotsutsumi/murasame-runtime.git#v0.1.0-rc.2",
       },
       "devDependencies": {
         "@biomejs/biome": "^2.5.13",
@@ -35,15 +35,15 @@
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.13", "", { "os": "win32", "cpu": "x64" }, "sha512-VOofU/nW761XWzUeUNE8zzYNyPrxuMuNFMizL0qz7J75yeV8N7WFheUlk1/K6dOkaFpH9wJ+lDKlwjAbw0346w=="],
 
-    "@murasame/adapter-codex": ["@murasame/adapter-codex@git+ssh://git@github.com/kotsutsumi/murasame-adapter-codex.git#0c6ee31f407dd76aba18c71387c19cbbdab1ae1a", { "dependencies": { "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.1", "zod": "^4.6.1" } }, "0c6ee31f407dd76aba18c71387c19cbbdab1ae1a"],
+    "@murasame/adapter-codex": ["@murasame/adapter-codex@git+ssh://git@github.com/kotsutsumi/murasame-adapter-codex.git#a0706a12842f00cd00798e904452aaeaebe74265", { "dependencies": { "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.2", "zod": "^4.6.1" } }, "a0706a12842f00cd00798e904452aaeaebe74265"],
 
-    "@murasame/animation": ["@murasame/animation@git+ssh://git@github.com/kotsutsumi/murasame-animation.git#df6f83df549dab7be2ca2956351d9e5933a4b787", {}, "df6f83df549dab7be2ca2956351d9e5933a4b787"],
+    "@murasame/animation": ["@murasame/animation@git+ssh://git@github.com/kotsutsumi/murasame-animation.git#b1c4298ea990f001ddd91cb4e377066d78debd50", {}, "b1c4298ea990f001ddd91cb4e377066d78debd50"],
 
-    "@murasame/flow": ["@murasame/flow@git+ssh://git@github.com/kotsutsumi/murasame-flow.git#086188e9355bf5d5475e9673141a40caf5e79629", { "dependencies": { "@murasame/animation": "git+ssh://git@github.com/kotsutsumi/murasame-animation.git#v0.1.0-rc.1" } }, "086188e9355bf5d5475e9673141a40caf5e79629"],
+    "@murasame/flow": ["@murasame/flow@git+ssh://git@github.com/kotsutsumi/murasame-flow.git#3af074942b5b041e406b70bdb0885516188f1db8", { "dependencies": { "@murasame/animation": "git+ssh://git@github.com/kotsutsumi/murasame-animation.git#v0.1.0-rc.2" } }, "3af074942b5b041e406b70bdb0885516188f1db8"],
 
-    "@murasame/protocol": ["@murasame/protocol@git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#e652c80373aecd9b0296cf12660e5da5305e28b3", { "dependencies": { "zod": "^4.6.1" } }, "e652c80373aecd9b0296cf12660e5da5305e28b3"],
+    "@murasame/protocol": ["@murasame/protocol@git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#1828eed6f7cd3ecb977ee89aca58018f42d88914", { "dependencies": { "zod": "^4.6.1" } }, "1828eed6f7cd3ecb977ee89aca58018f42d88914"],
 
-    "@murasame/runtime": ["@murasame/runtime@git+ssh://git@github.com/kotsutsumi/murasame-runtime.git#258561717b4955dfedf3e34d35e608a96a00600f", { "dependencies": { "@murasame/flow": "git+ssh://git@github.com/kotsutsumi/murasame-flow.git#v0.1.0-rc.1", "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.1" } }, "258561717b4955dfedf3e34d35e608a96a00600f"],
+    "@murasame/runtime": ["@murasame/runtime@git+ssh://git@github.com/kotsutsumi/murasame-runtime.git#c39af7e464b50c0ab1c030a1607e0460ab9b0c9e", { "dependencies": { "@murasame/flow": "git+ssh://git@github.com/kotsutsumi/murasame-flow.git#v0.1.0-rc.2", "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.2" } }, "c39af7e464b50c0ab1c030a1607e0460ab9b0c9e"],
 
     "@types/node": ["@types/node@22.20.2", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-xlvWf4Vs9n1PEVYwP1n4vvG07M6y8WgvJ2t0vbrWTmijsIHp1cS+uJ2kMIRdY3nHZK0nCYKrPeD171+SzF4/zw=="],
 
