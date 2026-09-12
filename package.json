@@ -48,6 +48,6 @@
     "bun": ">=1.2.0"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   }
 }
