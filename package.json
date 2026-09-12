@@ -1,6 +1,7 @@
 {
   "name": "@murasame/driver-codex",
   "version": "0.1.0-rc.1",
+  "private": true,
   "description": "A process and control driver for headless Codex CLI JSONL executions.",
   "license": "MIT",
   "repository": {
@@ -35,9 +36,9 @@
     "example:multi-run": "bun run examples/multi-run.ts"
   },
   "dependencies": {
-    "@murasame/adapter-codex": "0.1.0-rc.1",
-    "@murasame/protocol": "0.1.0-rc.1",
-    "@murasame/runtime": "0.1.0-rc.1"
+    "@murasame/adapter-codex": "git+ssh://git@github.com/kotsutsumi/murasame-adapter-codex.git#v0.1.0-rc.1",
+    "@murasame/protocol": "git+ssh://git@github.com/kotsutsumi/murasame-protocol.git#v0.1.0-rc.1",
+    "@murasame/runtime": "git+ssh://git@github.com/kotsutsumi/murasame-runtime.git#v0.1.0-rc.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.13",
@@ -46,8 +47,5 @@
   },
   "engines": {
     "bun": ">=1.2.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
